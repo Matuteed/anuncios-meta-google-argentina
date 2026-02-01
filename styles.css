@@ -242,51 +242,36 @@ footer {
     gap: 10px;
   }
 }
-/* ===== SOBRE MI LAYOUT PRO ===== */
+/* ===== SOBRE MI (FIX DEFINITIVO) ===== */
 
-/* ===== SOBRE MI (correcto) ===== */
-#sobre-mi .container{
-  max-width: 1200px;
-}
-
-#sobre-mi .about-wrap{
+.about-row{
   display: flex;
   align-items: center;
-  justify-content: center; /* centra el bloque entero */
-  gap: 28px;
+  gap: 32px;
   max-width: 900px;
   margin: 0 auto;
 }
 
-#sobre-mi .about-photo{
+.about-avatar{
   width: 140px;
   height: 140px;
-  border-radius: 999px;
+  border-radius: 50%;
   object-fit: cover;
   object-position: center;
-  flex: 0 0 140px;
+  flex-shrink: 0;
   border: 4px solid #FFFFFF;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-#sobre-mi .about-text{
+.about-copy{
   flex: 1;
-  max-width: 620px;
-  text-align: left; /* texto alineado prolijo */
-}
-
-#sobre-mi .about-text p{
-  margin: 0 0 14px;
   line-height: 1.65;
 }
 
-/* Mobile: apila y centra */
+/* Mobile */
 @media (max-width: 768px){
-  #sobre-mi .about-wrap{
+  .about-row{
     flex-direction: column;
-    text-align: center;
-  }
-  #sobre-mi .about-text{
     text-align: center;
   }
 }
