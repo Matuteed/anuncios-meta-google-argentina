@@ -242,3 +242,35 @@ footer {
     gap: 10px;
   }
 }
+/* ===== SOBRE MI LAYOUT PRO ===== */
+
+.about-wrap{
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-photo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  flex-shrink: 0;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  border: 4px solid #FFFFFF;
+}
+
+.about-text{
+  flex: 1;
+}
+
+/* En celular se acomoda solo */
+@media (max-width: 768px){
+  .about-wrap{
+    flex-direction: column;
+    text-align: center;
+  }
+}
